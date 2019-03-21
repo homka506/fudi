@@ -136,7 +136,9 @@ font-size: 17.85px;
 font-weight: 700;
 line-height: 33px;
 padding: 20px 80px;
-
+}
+.ba-edit a {
+	text-decoration: underline;
 }
 h1 {
     font:100px/1.8'Lato', sans-serif;
@@ -189,11 +191,24 @@ h2 {
 	font-size: 19px;
 	font-weight: 700;
 	letter-spacing: 0.02em;
+	position: relative;
+}
+.ba-section-title:after {
+	content: '';
+    width: 88px;
+    height: 1px;
+    background: #F57365;
+    position: absolute;
+    top: 34px;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .ba-phone {
 	background: #F4F4F4;
-	padding: 82px 0 0;
+	padding: 95px 0 0 0 ;
 }
 .ba-article {
 	display:flex;
@@ -202,10 +217,10 @@ h2 {
 	width: 50%;
 	display: flex;
 	align-items: flex-end;
-	margin-right: 116px;
+	margin-right: 100px;
 }
 img {
-	height: auto;
+	
 	max-width: 100%;
 }
 .ba-phone-description {
@@ -213,9 +228,9 @@ img {
 color:  #000000;
 font-size: 16px;
 font-weight: 300;
-letter-spacing: 0.02em;
+letter-spacing: 0.04em;
 line-height: 18px;
-padding: 70px 0;
+padding: 55px 0 0;
 }
 h4 {
 	font-size: 19px;
@@ -224,23 +239,37 @@ h4 {
     position: relative;
     letter-spacing: 0.02em;
 }
+h4:after {
+	content: '';
+    width: 88px;
+    height: 1px;
+    background: #F57365;
+    position: absolute;
+    top: 34px;
+    left: 2px;
+    right: auto;
+    bottom: 0;
+    margin: auto;
+}
 .ba-phone-description p{
-	margin-bottom: 23px;
+	margin-bottom: 30px;
     line-height: 1.5;
     letter-spacing: 0.045em;
 }
 .ba-boy {
 	background: #493748;
-	padding:80px 0;
+	padding:80px 0 93px;
 	text-align: center;
 	display:flex;
 }
 blockquote {
 	font-size: 30px;
-	line-height: 35px;
-    margin-top: 9px;
-	margin-left: 131px;
+	line-height: 45px;
+	letter-spacing: 0.020em;
+    margin-top: 6px;
+	margin-left: 114px;
 	margin-bottom: 15px;
+	text-align:center;
 	color:#A098A0;
 }
 	
@@ -253,7 +282,7 @@ line-height: 36px;
 }
 .ba-browse {
 	text-align: center;
-    padding: 88px 90px 50px;
+    padding: 65px 44px 50px;
 }
 .ba-browse-menu-item
 {
@@ -322,14 +351,15 @@ text-shadow: 0px 1px 40px rgba(1, 1, 1, 0.55);
 .ba-footer-numbers {
 	font-size: 36px;
 	font-weight: 700;
-	margin:0;
+	letter-spacing: 0.050em;
 }
 .ba-countdown_item p {
 	margin:0;
+	letter-spacing: 0.060em;
 }
 footer {
 background: #F4F4F4;
-padding: 37px 0 14px;
+padding: 30px 0 14px;
 }
 .ba-footer-item {
 	display: flex;
